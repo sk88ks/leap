@@ -1,0 +1,102 @@
+
+html, body {
+    margin: 0;
+    background: #efefef;
+    overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    color: #222;
+    font-size: 13px;
+}
+.box {
+    height: 28px;
+    margin-top: -14px;
+    margin-left: -14px;
+    padding: 0 6px;
+    position: absolute;
+    border-radius: 8px;
+    color: #222;
+    text-align: center;
+    line-height: 28px;
+    font-size: 24px;
+    cursor: move;
+    user-select: none;
+    font-weight: bold;
+}
+.box.hover {
+    background: rgba(255,255,255,0.8);
+    color: #111;
+}
+.cursor {
+    height: 30px;
+    width: 30px;
+    margin-top: -17px;
+    margin-left: -17px;
+    position: absolute;
+    border: 4px solid #000;
+    border-radius: 5px;
+    background: #888;
+}
+.cursor .inner {
+    height: 100%;
+    background: #fff;
+}
+canvas {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left; 0;
+    z-index: 0;
+}
+
+h2 {
+    margin: 12px;
+    color: #fb5;
+}
+
+#controls {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    background: rgba(255,255,255,0.5);
+    padding: 8px 12px;
+    line-height: 30px;
+}
+#controls .item {
+    margin-right: 16px;
+}
+#save_data {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 90%;
+    height: 90%;
+    background: rgba(230,230,230,0.8);
+    z-index: 5;
+    display: none;
+    padding: 5%;
+    text-align: right;
+}
+#save_data textarea {
+    color: #fff;
+    background: #000;
+    padding: 4px 6px;
+    width: 60%;
+    height: 60%;
+    overflow: auto;
+}
+.button {
+    padding: 3px 6px;
+    border: 1px solid #222;
+    user-select: none;
+    cursor: pointer;
+}
+.button:hover {
+    background: #222;
+    color: #fff;
+}
+#beep {
+    display: none;
+}
